@@ -10,7 +10,7 @@ body {
  justify-content: center;
  align-items: center;
  min-height:  100vh;
- background:  url('../../image/002.webp');
+ background:  url('../image/002.webp');
  background-size:  cover;
  background-position:  center;
 
@@ -101,4 +101,23 @@ body {
 .fin{
     color: #fff;
 }
+.loading-animation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border: 5px solid red;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 

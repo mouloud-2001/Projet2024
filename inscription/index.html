@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitnesse GYM</title>
-    <link rel="stylesheet  " href="../Styles/styleINSCRIPTION.css">
+    <link rel="stylesheet" href="../Styles/styleINSCRIPTION.css">
 </head>
 <body>
     <header>
@@ -13,14 +13,14 @@
         <h2 class="center-text">Informations personnelles</h2>
         <p class="note">Veuillez entrer les informations du participant.</p>
         <h3>Informations du participant</h3>
-        <form method="post" class="contenaire">
+        <form method="post" class="contenaire" id="inscriptionForm">
             <div class="form-group">
                 <label class="allo" for="pernom">Prénom <span class="required">*</span><br></label>
-                <input  id="pernom" type="text" name="prénom" value="">
+                <input id="pernom" type="text" name="prénom" value="">
             </div>
             <div class="form-group">
                 <label for="nom">Nom <span class="required">*</span><br></label>
-                <input  id="nom" type="text" name="Nom" required>
+                <input id="nom" type="text" name="Nom" required>
             </div>
             <div class="form-group">
                 <label for="phone">Téléphone <span class="required">*</span><br></label>
@@ -104,6 +104,6 @@
         </form>
     </main>
     <footer></footer>
-
+<script src="../Js/scriptInscription.js"></script>
 </body>
 </html>

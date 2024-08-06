@@ -9,18 +9,18 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="#">
+        <form id="loginForm" action="#">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username">
+                <input type="text" id="username" placeholder="Username" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="password">
+                <input type="password" id="password" placeholder="Password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
+                <label><input type="checkbox" id="rememberMe">Remember me</label>
                 <a href="#">Forgot password?</a>
             </div>
             <button type="submit" class="btn">Login</button>
@@ -28,6 +28,8 @@
                 <p>Don't have an account?<a href="../inscription/index.html">Register</a></p>
             </div>
         </form>
+        <div id="loading-animation" class="loading-animation"></div>
     </div>
+    <script src="../Js/scriptLogin.js"></script>
 </body>
 </html>

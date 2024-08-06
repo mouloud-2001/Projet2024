@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/styleCANTACT_US.css">
-    <title>Document</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header class="header">
@@ -22,7 +22,7 @@
         <section class="contact">
             <div class="max-width">
                 <h2 class="title">Contact Us</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="input-group">
                         <label for="name">UserName</label>
                         <input type="text" id="name" name="name" placeholder="mark" required>
@@ -33,11 +33,12 @@
                     </div>
                     <div class="input-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                        placeholder="Ecrire c'est quoi ton probleme" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Ecrire c'est quoi ton probleme" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
+                <p id="formMessage" style="color: white; margin-top: 20px;"></p>
+                <div id="successMessage" class="hidden">Form submitted successfully!</div>
             </div>
         </section>
     </main>
@@ -46,10 +47,11 @@
             <div class="footer-info">
                 <p>Address: 123 Fitness Street, Gym City, Country</p>
                 <p>Phone: +123 456 7890</p>
-                <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+                <p>GitHub: <a href="https://github.com/seif-web-coder/project_html/tree/master" target="_blank">github.com/yourusername</a></p>
                 <p>Email: <a href="mailto:contact@irongym.com">contact@irongym.com</a></p>
             </div>
         </div>
     </footer>
+    <script src="../Js/scriptContactUs.js"></script>
 </body>
 </html>
